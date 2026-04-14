@@ -8,16 +8,23 @@ if B > A:
     A, B = B, A
 if C > A:
     A, C = C, A
+if C > B:
+    B, C = C, B
 
 if A >= B + C:
     print("Com essas medidas, um triângulo não será formado")
 else:
-    if A * A == B * B + C * C:
+    if A**2 == B**2 + C**2:
         print("O triângulo é: retângulo")
 
 
-    elif A * A > B * B + C * C:
+    elif A**2 > B**2 + C**2:
         print("O triângulo é: obtuso")
 
-    elif A * A < B * B + C * C:
+    elif A**2 < B**2 + C**2:
         print("O triângulo é: agudo")
+
+    if A == B == C:
+        print("e tambem é equilátero")
+    elif B == C or B == A:
+        print("e tambem é isósceles")
