@@ -12,19 +12,19 @@ if C > B:
     B, C = C, B
 
 if A >= B + C:
-    print("Com essas medidas, um triângulo não será formado")
+    print("NAO FORMA TRIANGULO")
 else:
     if A**2 == B**2 + C**2:
-        print("O triângulo é: retângulo")
+        print("TRIANGULO RETANGULO")
 
 
     elif A**2 > B**2 + C**2:
-        print("O triângulo é: obtuso")
+        print("TRIANGULO OBTUSANGULO")
 
     elif A**2 < B**2 + C**2:
-        print("O triângulo é: agudo")
+        print("TRIANGULO ACUTANGULO")
 
     if A == B == C:
-        print("e tambem é equilátero")
+        print("TRIANGULO EQUILATERO")
     elif B == C or B == A:
-        print("e tambem é isósceles")
+        print("TRIANGULO ISOSCELES")
